@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  
+}
+
+.html {
+  background-color: lightgray;
+  
+}
+body {
+  min-width: 271px;
+}
+
+#navbar {
+  width: auto; /* Set the width of the sidebar */
+  position: fixed;
+  height: 100%;
+  ovrflow-x: hidden;
+  overflow-y: auto;
+  border-right: solid;
+  
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+}
+
+#navbar header {
+  font-weight: bold;
+  position: relative;
+  padding: 14px;
+}
+
+#navbar ul {
+  display: block;
+  
+}
+
+#navbar li {
+  width: 100%;
+  padding: 8px;
+  border-top: 1px solid;
+  
+}
+
+#main-doc {
+  margin-left: 271px;
+  position: absolute;
+  padding: 18px;
+  
+}
+
+#main-section .header {
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+header {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 9px;
+  
+}
+
+#main-doc ul li {
+  margin: 2%;
+}
+
+code {
+  margin: 18px;
+  background-color: #fee;
+  border-radius: 3px;
+  padding-bottom: 9px;
+  text-align: left;
+  line-height: 2;
+}
+
+#main-doc p {
+  margin: 27px 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar ul {
+    height: 250px;
+  }
+  
+  #navbar {
+  width: auto; /* Set the width of the sidebar */
+  position: absolute;
+  height: 100%;
+  ovrflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+}
+  #main-doc {
+  margin-left: 271px;
+  position: relative;
+  padding: 18px;
+  
+}
+}
+
+@media only screen and (max-width: 468px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+  
+  code {
+  margin-left: -15px;
+  background-color: #fee;
+  border-radius: 3px;
+  padding-bottom: 9px;
+  text-align: left;
+  line-height: 2;
+}
+}
